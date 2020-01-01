@@ -9,7 +9,8 @@ type Props = {
   incrementIfOdd: () => void,
   incrementAsync: () => void,
   decrement: () => void,
-  counter: number
+  counter: number,
+  name: string
 };
 
 export default class Counter extends Component<Props> {
@@ -21,8 +22,11 @@ export default class Counter extends Component<Props> {
       incrementIfOdd,
       incrementAsync,
       decrement,
-      counter
+      counter,
+      name
     } = this.props;
+    console.log(name);
+    console.log(this.props);
     return (
       <div>
         <div className={styles.backButton} data-tid="backButton">
