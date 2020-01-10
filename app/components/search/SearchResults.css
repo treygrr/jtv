@@ -17,7 +17,7 @@
 
 .posterItemWrapper {
   padding: 0;
-  grid-row-end: span 4;
+  grid-row-end: span 1;
 }
 
 .posterImg {
