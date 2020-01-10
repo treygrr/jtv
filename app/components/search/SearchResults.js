@@ -25,15 +25,12 @@ export default class SearchResults extends Component<Props> {
   showData = () => {
     const { list } = this.props;
     if (list.length !== 0) {
-      return list.map((data, index) => (
-        <div key={data.anime_id} className={styles.posterItemWrapper}>
-          <SearchResultsCard
-            dataUrl={this.stripChars(data.name, data.anime_id)}
-            dataName={data.name}
-          />
-          {data.anime_id}
-          {index}
-        </div>
+      return list.map(data => (
+        <SearchResultsCard
+          key={data.anime_id}
+          dataUrl={this.stripChars(data.name, data.anime_id)}
+          dataName={data.name}
+        />
       ));
     }
   };
