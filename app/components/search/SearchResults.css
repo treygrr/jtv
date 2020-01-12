@@ -9,11 +9,12 @@
 .container {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 25%));
+  grid-template-columns: repeat(4, minmax(auto, 25%));
   grid-gap: 0 20px;
-  grid-auto-rows: 1;
+  grid-auto-rows: 10;
   grid-auto-flow: row dense;
-  overflow-x: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .posterItemWrapper {
