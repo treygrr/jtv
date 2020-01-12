@@ -31,7 +31,7 @@ export default class SearchResultsCard extends React.Component<Props, State> {
     // $FlowFixMe
     const height = this.reference.current.clientHeight;
 
-    const spans = height / 1 + 1;
+    const spans = height / 10 + 1;
 
     await this.setState(prevState => ({
       ...prevState,
